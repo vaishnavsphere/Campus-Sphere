@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100,200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+h2{
+    font-size: 33px;
+    line-height: 54px;
+    color: black;
+}
+h4{
+    font-size: 20px;
+    color: black;
+}
+h6{
+    font-weight: 700;
+    color: black;
+}
+p{
+    font-size: 19px;
+    color: rgb(7, 158, 168);
+    margin: 1px 0 15px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: rgb(0, 247, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline:none;
+    transition: 0.2s;
+
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    outline:none;
+    transition: 0.2s;
+
+}
+body{
+    width: 100%;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 35px;
+    background-color: rgb(9, 22, 39);
+    box-shadow: 0 5px 15px rgba(280, 166, 0, 0.699);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative ;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 15.9px;
+    font-weight: 550;
+    color: rgb(252, 241, 241);
+    transition: 0.3s ease;
+
+}
+#navbar li a:hover,
+#navbar li a.active{
+      color: rgb(280, 166, 0);
+    }
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    
+    content: "";
+    width: 35%;
+    height: 1.7px;
+    background-color:rgb(280, 166, 0);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero{
+    
+    
+    background-image: url("img/left.png");
+    background-color:rgb(6, 31, 62);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right cm;
+    padding: 0 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h1{
+    padding-bottom: 35px;
+}
+#hero h1{
+    color: #ffffff;
+
+    
+}
+#hero h2{
+    color:rgb(280,160,0);
+}
+#hero button:hover{
+    background-color:rgba(206, 177, 12, 0.188);
+    color: #c9fcd2;
+    border-radius: 500px;
+    border-color: #f3fff5;
+}
+
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(88, 99, 97, 0.205);
+    border: 1px solid #f50d0d;
+    border-radius: 4px;
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+#feature .fe-box:hover{
+   box-shadow: 20px 20px 34px rgba(88, 100, 97, 0.582);
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6{
+    font-size: 15px;
+    
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(22, 49, 49);
+    background-color: rgb(245, 148, 30);
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #064699;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(88, 88, 90, 0.188);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+   
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(88, 91, 97, 0.507);
+
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 p{
+    font-weight: 600;
+     color:#2aa787
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: rgb(82, 82, 82);
+    font-size: 13px;
+}
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+#product1 .pro .des i {
+    font-size: 10px;
+    color: rgb(245, 178, 9);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:#088178;
+}
+#product1 .pro .fa-cart-shopping{
+    width: 40px;
+    height: 40x;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #c9fcd2;
+    border: 1px solid #68e47b;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/pw\ gate.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: black;
+    font-size: 20px;
+    font-weight: 100px;
+    padding: 10px 0;
+}
+#banner h2{
+        color: rgb(0, 103, 110);
+        font-size: 40px;
+        font-weight: 800;
+        padding: 10px 0;
+}
+#banner h2 span{
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+#banner button:hover{
+    background-color: #088178;
+    color: #c9fcd2;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/offer\ calcu.jpg ");
+    width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+
+}
+#sm-banner .banner-box2{
+    background-image: url("img/offer-book.jpg ");
+}
+#sm-banner h4{
+    color: #c8ff00;
+    font-size: 20px;
+    font-weight: 900;
+}
+#sm-banner h2{
+    color: #380cfa;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner h2 span{
+    color: #fa0c0c;
+    font-size: 28px;
+        font-weight: 800;}
+#sm-banner span{
+    color: #f3fff5;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+    background: #0f4e073f;
+    border: 1px solid #eeff00;
+}
+#banner3{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/offer\ ardino.jpg ");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url("img/b7.jpg");
+}
+#banner3 .banner-box2{
+    background-image: url("img/b7.jpg");
+}
+
+#banner3 h2 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 22px;
+
+}
+#banner3 h3 {
+    color: #ff0000;
+    font-weight: 800;
+    font-size: 15px;
+
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: black;
+
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(179, 175, 172);
+}
+#newsletter p span{
+    
+    color: rgb(62, 247, 16);
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+
+}
+#newsletter button{
+    background-color: #2aa787;
+    color: #ffffff;
+    white-space: nowrap;
+}
+#footer p {
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(75, 75, 75);
+
+}
+#footer p strong {
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(221, 0, 0);
+
+}
